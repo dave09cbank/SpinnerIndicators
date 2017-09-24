@@ -13,7 +13,6 @@
 
         <Setter Property="BorderBrush" Value="AliceBlue" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="Background" Value="Black" />
         <Setter Property="MaxWidth" Value="{Binding Width, RelativeSource={RelativeSource Self}}" />
         <Setter Property="MaxHeight" Value="{Binding Height, RelativeSource={RelativeSource Self}}" />
         <Setter Property="Width" Value="60" />
@@ -36,7 +35,7 @@
                         <Ellipse x:Name="Part_InnerCircleRim" 
                                      Fill="{Binding Background, RelativeSource={RelativeSource TemplatedParent}}"
                                      Width="29" Height="29"
-                                     Margin="17" />
+                                     Margin="18" />
 
                         <views:SpinnerControl x:Name="Part_Inner" 
                                                   Direction="Counterclockwise"
@@ -45,7 +44,7 @@
                                                   Width="{Binding Width, RelativeSource={RelativeSource TemplatedParent}}" 
                                                   Height="{Binding Width, RelativeSource={RelativeSource Self}}"
                                                   StrokeBrush="{Binding StrokeBrush, RelativeSource={RelativeSource TemplatedParent}}" 
-                                                  FillColor="AliceBlue" />
+                                                   />
                         <views:SpinnerControl x:Name="Part_Outer" 
                                                   Margin="2"
                                                   Direction="Clockwise"
@@ -53,7 +52,7 @@
                                                   Width="{Binding Width, RelativeSource={RelativeSource TemplatedParent}}" 
                                                   Height="{Binding Width, RelativeSource={RelativeSource Self}}"
                                                   StrokeBrush="{Binding StrokeBrush, RelativeSource={RelativeSource TemplatedParent}}" 
-                                                  FillColor="AliceBlue" />
+                                                   />
 
                     </Canvas>
                 </ControlTemplate>

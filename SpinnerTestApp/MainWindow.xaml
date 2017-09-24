@@ -10,6 +10,7 @@
     <Grid>
 
         <DualSpinnerControl:DualSpinnerControl HorizontalAlignment="Left" Margin="0" 
+                                               Background="Black"
                                                VerticalAlignment="Top" />
 
     </Grid>

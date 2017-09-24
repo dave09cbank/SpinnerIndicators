@@ -9,15 +9,7 @@
 
 
     <Style TargetType="{x:Type views:SpinnerControl}">
-        <Style.Resources>
-            <Color x:Key="FilledColor">#25a6f7</Color>
-            <!--<Color x:Key="UnFilledColor">#ffffff</Color>-->
-            <Color x:Key="UnFilledColor">#ff0000</Color>
-
-            <SolidColorBrush x:Key="FilledBrush" Color="{StaticResource FilledColor}" />
-            <SolidColorBrush x:Key="UnFilledBrush" Color="{StaticResource UnFilledColor}" />
-
-
+        <Style.Resources>          
             <Style TargetType="{x:Type views:Arc}">
                 <Setter Property="Width" Value="{Binding Width, RelativeSource={RelativeSource TemplatedParent}}"  />
                 <Setter Property="Height" Value="{Binding Height, RelativeSource={RelativeSource TemplatedParent}}"  />
@@ -44,11 +36,7 @@
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc0" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="30" />
-                            </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc0" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
+                            </DoubleAnimationUsingKeyFrames>       
 
                             <!--arc 2-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc1" Storyboard.TargetProperty="StartAngle">
@@ -57,10 +45,8 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc1" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="70" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
+                            
+                            
 
                             <!--arc 3-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc2" Storyboard.TargetProperty="StartAngle">
@@ -70,11 +56,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="110" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 4-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc3" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="120" />
@@ -83,11 +64,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="150" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 5-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc4" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="160" />
@@ -95,10 +71,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc4" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="190" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc4" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
 
                             <!--arc 6-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc5" Storyboard.TargetProperty="StartAngle">
@@ -108,11 +80,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="230" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 7-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc6" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="240" />
@@ -121,11 +88,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="270" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc6" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 8-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc7" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="280" />
@@ -133,10 +95,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc7" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="310" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc7" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
 
                             <!--arc 9-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.0" Duration="0:0:0.8" Storyboard.TargetName="arc8" Storyboard.TargetProperty="StartAngle">
@@ -145,11 +103,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc8" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="350" />
                             </DoubleAnimationUsingKeyFrames>
-
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc8" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
                         </Storyboard>
 
                         <Storyboard x:Key="AnimationB" BeginTime="00:00:00.8" RepeatBehavior="Forever">
@@ -159,11 +112,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc0" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="50" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc0" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
 
                             <!--arc 2-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc1" Storyboard.TargetProperty="StartAngle">
@@ -172,10 +120,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc1" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="90" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
 
                             <!--arc 3-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc2" Storyboard.TargetProperty="StartAngle">
@@ -185,11 +129,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="130" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 4-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc3" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="140" />
@@ -197,10 +136,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc3" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="170" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc3" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
 
                             <!--arc 5-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc4" Storyboard.TargetProperty="StartAngle">
@@ -210,11 +145,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="210" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc4" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 6-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc5" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="220" />
@@ -222,11 +152,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc5" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="250" />
                             </DoubleAnimationUsingKeyFrames>
-
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
 
                             <!--arc 7-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc6" Storyboard.TargetProperty="StartAngle">
@@ -236,11 +161,6 @@
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="290" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc6" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
-
                             <!--arc 8-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc7" Storyboard.TargetProperty="StartAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="300" />
@@ -248,10 +168,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc7" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="330" />
                             </DoubleAnimationUsingKeyFrames>
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc7" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
 
                             <!--arc 9-->
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc8" Storyboard.TargetProperty="StartAngle">
@@ -260,11 +176,6 @@
                             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.8" Duration="0:0:0.8" Storyboard.TargetName="arc8" Storyboard.TargetProperty="EndAngle">
                                 <EasingDoubleKeyFrame KeyTime="00:00:00.0" Value="370" />
                             </DoubleAnimationUsingKeyFrames>
-
-                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="arc8" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                <SplineColorKeyFrame  KeyTime="00:00:00.0" Value="{StaticResource FilledColor}" />
-                                <SplineColorKeyFrame  KeyTime="00:00:00.8" Value="{StaticResource UnFilledColor}" />
-                            </ColorAnimationUsingKeyFrames>
                         </Storyboard>
                     </ControlTemplate.Resources>
 
@@ -285,7 +196,7 @@
 
                     <Grid>
                         <views:Arc x:Name="arc0" 
-                                       StartAngle="0" EndAngle="30" Canvas.Left="1.75" Canvas.Top="21" />
+                                       StartAngle="0" EndAngle="30"  />
                         <views:Arc x:Name="arc1"                                        
                                        StartAngle="40" EndAngle="70" />
                         <views:Arc x:Name="arc2"                                      

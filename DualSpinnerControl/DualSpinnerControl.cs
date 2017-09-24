@@ -50,19 +50,7 @@ namespace DualSpinnerControl
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(DualSpinnerControl), new FrameworkPropertyMetadata(typeof(DualSpinnerControl)));
         }
-
-        public Color FillColor
-        {
-            get { return (Color)GetValue(FillColorProperty); }
-            set { SetValue(FillColorProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for FillColor.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty FillColorProperty =
-            DependencyProperty.Register("FillColor", typeof(Color), typeof(DualSpinnerControl), new PropertyMetadata(ColorConverter.ConvertFromString("#25a6f7")));
-
-
-
+        
         public Brush StrokeBrush
         {
             get { return (Brush)GetValue(StrokeBrushProperty); }
@@ -72,7 +60,6 @@ namespace DualSpinnerControl
         // Using a DependencyProperty as the backing store for StrokeBrush.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty StrokeBrushProperty =
             DependencyProperty.Register("StrokeBrush", typeof(Brush), typeof(DualSpinnerControl), new PropertyMetadata(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#25a6f7"))));
-
 
 
     }
